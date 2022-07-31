@@ -6,9 +6,6 @@ for car in cars:
     if car != 'bmw':
         print(car.title())
 
-newCar = 'bmw'
-newCar == 'bmw'
-
 requested_toppings = 'mushrooms'
 
 if requested_toppings != 'anchovies':
@@ -64,7 +61,7 @@ print(user == "bob")
 # •	 Test whether an item is in a list
 # •	 Test whether an item is not in a list
 
-food = 'cookies'
+food = 'Cookies'
 
 if food == 'cookies':
     print("This is cookies.")
@@ -72,21 +69,75 @@ elif food != 'cookies':
     print("This is not cookies.")
 
 if food.lower() == 'cookies':
-    print("This is lower.")
+    print("This is lowercase.")
 if food.lower() != 'cookies':
     print("This is not cookies")
 
-numbers = 19
-if numbers > 20:
-    print(str(numbers) + " is greater than 20.")
-elif numbers < 20:
-    print(str(numbers) + " is less than 20.")
-elif numbers == 19:
-    print(str(numbers) + " is equal to  19.")
-elif numbers != 19:
-    print(str(numbers) + " is not equal to 19.")
-elif numbers <= 20:
-    print(str(numbers) + " is less than/equal to 20.")
-elif numbers >= 20:
-    print(str(numbers) + " is greater than/equal to 20.")
+numbers = 30
+numberCompare = 40
+if numbers > numberCompare:
+    print(str(numbers) + " is greater than " + str(numberCompare))
+elif numbers < numberCompare:
+    print(str(numbers) + " is less than " + str(numberCompare))
+
+if numbers == numberCompare:
+    print(str(numbers) + " is equal to " + str(numberCompare))
+elif numbers != numberCompare:
+    print(str(numbers) + " is not equal to " + str(numberCompare))
+
+if numbers <= numberCompare:
+    print(str(numbers) + " is less than/equal " + str(numberCompare))
+elif numbers >= numberCompare:
+    print(str(numbers) + " is greater than/equal " + str(numberCompare))
+
+if numbers <= numberCompare and numbers >= 20:
+    print(True)
+else:
+    print(False)
+if numbers >= numberCompare or numbers >= 30:
+    print(True)
+else:
+    print(False)
+
+cars = ['bmw', 'audi', 'toyota', 'mercedes', 'nissan', 'lexus', 'subaru']
+car = 'bmw'
+car2 = 'subaru'
+if car in cars:
+    print(car.upper() + " found in the list")
+else:
+    print(car.upper() + " not found in list")
+
+if car2 not in cars:
+    print(car2.title() + " not found in list")
+else:
+    print(car2.title() + " found in list")
+
+votingAge = 21
+if votingAge >= 18:
+    print("\nYou are old enough to vote.")
+    print("\nHave you registered to vote?")
+else:
+    print("\nSorry, You arent old enough to vote.")
+    print("\nPlease, when you are old enough please register.")
+
+amusementAge = 20
+if amusementAge < 4:
+    print("\nYou are unable to ride. Admission cost is $0.")
+elif amusementAge < 18:
+    print("\nYou are able to ride. Admission cost is $25.")
+else:
+    print("\nYou are able to ride. Admission cost is $40.")
+
+amusementAge = 20
+if amusementAge < 4:
+    price = 0
+elif amusementAge < 18:
+    price = 25
+else:
+    price = 40
+
+print("Your admission cost is $" + str(price))
+
+
+
 

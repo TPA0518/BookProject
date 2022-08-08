@@ -270,4 +270,50 @@ for requested_topping in requested_toppings:
         print("\nSorry, we dont have " + requested_topping + ".")
 print("\nFinished making your pizza!")
 
+usernameList = ['Thomas', 'Lis', 'admin', 'Steven', 'Danny']
+if usernameList:
+    for username in usernameList:
+        if username == 'admin':
+            print('Hello admin, would you like to see a status report?')
+        if username != 'admin':
+            print('Hello ' + username + ', thank you for logging in again.')
+else:
+    print('We need more users')
 
+currentUsers = ['Jake', 'Lis', 'admin', 'Steven', 'Thomas', 'Bob']
+newUsers = ['THOMAS', 'Jacob', 'David', 'Benny', 'Bob', 'Jackie']
+cUserLow = []
+newUsersLow = []
+for cUser in currentUsers:
+    currentUserLower = cUser.lower()
+    cUserLow.append(currentUserLower)
+    print(cUserLow)
+
+for nUser in newUsers:
+    newUserLower = nUser.lower()
+    newUsersLow.append(newUserLower)
+    print(newUsersLow)
+
+for nUser in newUsersLow:
+    if nUser in cUserLow:
+        print('Hello, ' + nUser + ' has been taken')
+    else:
+        print('Hello, ' + nUser + ' username is available')
+# 5-11. Ordinal Numbers: Ordinal numbers indicate their position in a list, such
+# as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+# •	 Store the numbers 1 through 9 in a list.
+# •	 Loop through the list.
+# •	 Use an if-elif-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th
+# 7th 8th 9th", and each result should be on a separate line.
+
+
+ordNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for number in ordNumbers:
+    if number == 1:
+        print(str(number) + 'st')
+    elif number == 2:
+        print(str(number) + 'nd')
+    elif number == 3:
+        print(str(number) + 'rd')
+    else:
+        print(str(number) + 'th')

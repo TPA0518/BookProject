@@ -152,5 +152,3 @@ person4 = {'name': 'jacob', 'ethnicity': 'spanish'}
 
 persons = [person1, person2, person3, person4]
 print(persons)
-
-for person in range(30):

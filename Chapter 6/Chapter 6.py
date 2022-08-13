@@ -278,7 +278,7 @@ cities = {'Washington D.C.': {'country': 'United States',
 
 LA = {'Los Angeles': {'country': 'United States',
                       'popNumber': 3973000,
-                      'fact': 'DC is home to more than 170 embassies and international cultural centers.'}}
+                      'fact': "The film industry moved to LA to flee Thomas Edison's patents"}}
 cities.update(LA)
 
 for city, cityFacts in cities.items():
@@ -290,6 +290,9 @@ for city, cityFacts in cities.items():
     print('The population of ' + city + 'is ' + str(popNumber))
     print('Here is a fact about ' + city + ". " + fact)
 
+Houston = {'Houston': {'country': 'United States',
+                       'popNumber': 2313000,
+                       'fact': 'Houston is the nations third most humid city.'}}
 # 6-12. Extensions: We’re now working with examples that are complex enough that they can be extended in any number
 # of ways. Use one of the example programs from this chapter, and extend it by adding new keys and values,
 # changing the context of the program or improving the formatting of the output

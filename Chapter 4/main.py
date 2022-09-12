@@ -1,11 +1,11 @@
 # Iterating through an array states example.
-states = ['alabama', 'texas', 'new york', 'maryland', 'virgina']
+states = ['maryland', 'rhode island', 'new jersey', 'california', 'oregon']
 
 for state in states:
-    print(state.title() + ", is a state I have visited.")
-    print("I cannot wait to go back to " + state.title() + ".\n")
+    print(state.title() + ", is a state I wish to visit.")
+    print("I cant wait to go visit " + state.title() + ".")
 
-print("These are all the states Ive been in.\n")
+print("These are all the states I want to visit.\n")
 
 # 4-1. Pizzas: Think of at least three kinds of your favorite pizza. Store these
 # pizza names in a list, and then use a for loop to print the name of each pizza.
@@ -18,11 +18,11 @@ print("These are all the states Ive been in.\n")
 # about the kinds of pizza you like and then an additional sentence, such as
 # I really love pizza!
 
-favPizzas = ["Cheese Pizza", "Jalapeno and Beef Pizza", "Barbaque Chicken"]
+favoritePizza = ["Cheese Pizza", "Pepperoni Pizza", 'Pineapple Pizza']
 
-for pizza in favPizzas:
-    print(pizza + " is my favorite pizza.")
-print("\nI really love pizza. ")
+for pizza in favoritePizza:
+    print(pizza + "is my favorite pizza.")
+print("I really like pizza.")
 
 # 4-2. Animals: Think of at least three different animals that have a common characteristic.
 # Store the names of these animals in a list, and then use a for loop to
@@ -33,12 +33,12 @@ print("\nI really love pizza. ")
 # common. You could print a sentence such as Any of these animals would
 # make a great pet!
 
-pets = ['dog', 'cat', 'lizard', 'ferret', 'mouse']
+animals = ['dog', 'cat', 'lizard', 'aligator', 'rat']
 
-for pet in pets:
-    print("A " + pet + " would be a good pet.\n")
+for animal in animals:
+    print("A " + animal + " would make a good pet.")
 
-print("\nAll these animals would make good pets.")
+print("These animals all have four legs. ")
 
 for value in range(1, 6):
     print("This is number " + str(value) + ".")
